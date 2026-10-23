@@ -1,0 +1,27 @@
+// MakeHero.mjs (23 October 2026): render the calculator result as the article's opening image. / rend le résultat du calculateur en image d'ouverture.
+import { execFileSync } from 'node:child_process'
+import fs from 'node:fs'
+import path from 'node:path'
+import { chromium } from 'playwright'
+const ROOT = path.resolve(path.dirname(new URL(import.meta.url).pathname), '..')
+const OUT = path.join(ROOT, 'Drafts/Article/assets/calculateur-euros-par-heure-23-October-2026.png')
+const calc = path.join(process.env.HOME, '.claude/skills/zenray-sales/scripts/SalesMath.mjs')
+const data = JSON.parse(execFileSync('node', [calc, '--json']).toString())
+const max = Math.max(...data.options.map(o => o.eurosPerHour))
+const rows = data.options.map(o => `<div class="row"><div class="name">${o.option}</div><div class="bar"><i style="width:${(o.eurosPerHour / max * 100).toFixed(1)}%"></i></div><div class="val"><span class="num">${o.eurosPerHour.toFixed(0)}</span> € par heure</div></div>`).join('')
+const html = `<!doctype html><meta charset=utf-8><style>
+@font-face{font-family:'GT Sectra LCG';src:url('file:///Users/zenray/Library/Fonts/GT-Sectra-LCGV-Regular.otf')}
+@font-face{font-family:AnthropicSerif;src:url('file:///Users/zenray/Library/Fonts/AnthropicSerif-Regular.ttf')}
+@font-face{font-family:InterVariable;src:url('file:///Users/zenray/Library/Fonts/InterVariable.ttf');font-weight:100 900}
+body{margin:0;width:1600px;height:900px;background:#1b1b1d;color:#f2f2f4;font-family:InterVariable;display:grid;place-content:center;padding:0 120px;box-sizing:border-box}
+h1{font-family:'GT Sectra LCG';font-weight:400;font-size:64px;margin:0 0 10px}
+p{color:#a1a1a6;font-size:24px;margin:0 0 54px}
+.row{display:grid;grid-template-columns:520px 1fr 260px;gap:28px;align-items:center;margin-bottom:34px;font-size:28px}
+.bar{height:22px;background:rgba(255,255,255,.08);border-radius:11px;overflow:hidden}.bar i{display:block;height:100%;background:#cc7c5e;border-radius:11px}
+.num,.val{font-family:AnthropicSerif}.val{text-align:right}
+.src{margin-top:30px;font-size:20px;color:#6e6e73}</style>
+<h1>Quelle option rapporte le plus par heure ?</h1><p>${data.params.contacts} contacts, réponse positive ${data.params.replyRate * 100} %, contrat de ${data.params.ticket} €. Hypothèses du calculateur SalesMath.mjs.</p>${rows}<div class=src>zenray-sales · 23 October 2026 · valeurs estimées, à remplacer par des mesures</div>`
+const b = await chromium.launch({ executablePath: process.env.HOME + '/Library/Caches/ms-playwright/chromium_headless_shell-1234/chrome-headless-shell-mac-arm64/chrome-headless-shell' })
+const p = await b.newPage({ viewport: { width: 1600, height: 900 } })
+await p.setContent(html); await p.waitForTimeout(500)
+await p.screenshot({ path: OUT }); await b.close(); console.log(OUT, fs.statSync(OUT).size)
