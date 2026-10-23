@@ -1,0 +1,88 @@
+{
+  "title": "ZenRay Sales",
+  "eyebrow": "Vente et prospection",
+  "date": "23 October 2026",
+  "subtitle": "zenray-sales",
+  "status": "Version du 23 October 2026",
+  "lead": "Skill de conseil en vente, tarification, statut juridique et prospection, construit après le rendez-vous du 23 October 2026.",
+  "hero": "calculator",
+  "heroAlt": "Barres comparant la prospection, le store d’assets et la construction d’un outil, en euros par heure.",
+  "heroText": "Chaque arbitrage de vente se ramène à un calcul en euros par heure.",
+  "heroCaption": "Calculateur SalesMath.mjs, hypothèses par défaut.",
+  "sources": "Sources-23-October-2026.json",
+  "footer": "ZenRay Sales · 23 October 2026.",
+  "fileLabels": {
+    "calculator": "Résultat du calculateur"
+  },
+  "fileRoles": {
+    "calculator": "Image d’ouverture, générée par Scripts/MakeHero.mjs."
+  },
+  "sections": [
+    {
+      "id": "contexte",
+      "eyebrow": "01 / Contexte",
+      "title": "Contexte",
+      "nav": "Contexte",
+      "html": "<p>Le 23 October 2026, un rendez-vous d’une heure a eu lieu avec Andreas, qui travaille dans la vente. Il portait sur la présentation de l’activité de technical artist 3D freelance et sur la recherche de contacts orientés vente.</p><p>Deux problèmes ont été identifiés : l’acquisition de clients (marketing et démarchage) et le temps consacré au développement d’outils plutôt qu’à la prospection.</p>"
+    },
+    {
+      "id": "andreas",
+      "eyebrow": "02 / Rendez-vous",
+      "title": "Leçons du rendez-vous",
+      "nav": "Leçons",
+      "html": "<ul><li>La prospection et le marketing se faisaient à partir de 23 h. Ils passent à 9 h.</li><li>Le calendrier décide de la journée, la liste de tâches vient ensuite.</li><li>Un bloc de 9 h à 10 h 30 est réservé à la prospection : au moins 10 studios contactés par jour.</li><li>Le temps de développement diminue, le temps de prospection et de marketing augmente.</li><li>Le volume est préféré à la prudence : 700 emails plutôt que 3 par jour.</li><li>Vendre l’existant avant de développer un nouvel outil.</li><li>Une offre de prix présente trois options, la plus chère en premier.</li></ul><p>Le bloc est inscrit dans ZenRay Plan sous le titre « 10 mails par jour aux studios : Exécution Andreas Method », du 24 au 30 October 2026, de 9 h à 10 h 30.</p>"
+    },
+    {
+      "id": "mesures",
+      "eyebrow": "03 / Mesures",
+      "title": "Chiffres de prospection",
+      "nav": "Mesures",
+      "html": "<p>Mesures dans ZenRay Freelance au 23 October 2026 :</p><table><thead><tr><th>Mesure</th><th>Valeur</th></tr></thead><tbody><tr><td>Fiches studios en base</td><td>849</td></tr><tr><td>À contacter</td><td>758</td></tr><tr><td>Contactés</td><td>15 (11 comptés avant le rendez-vous)</td></tr><tr><td>Réponses positives</td><td>1</td></tr><tr><td>Refus</td><td>3</td></tr><tr><td>Stat indiquée par Matthieu</td><td>environ 1 réponse positive pour 10 studios, non officielle</td></tr><tr><td>Encaissé depuis October 2026</td><td>665 €, mission pour un studio</td></tr></tbody></table><p>L’échantillon est trop petit pour établir un taux. Le calculateur recommande de mesurer après 100 envois.</p>"
+    },
+    {
+      "id": "base",
+      "eyebrow": "04 / Base de connaissance",
+      "title": "Sales1.md",
+      "nav": "Sales1.md",
+      "html": "<p>Le fichier <code>/Users/zenray/.claude/skills/zenray-sales/Sales1.md</code> compte 1 048 lignes et 26 chapitres. Il est construit sur le modèle de Copernicus2.md. Chaque ligne est datée et les sources sont citées par lien.</p><table><thead><tr><th>Chapitres</th><th>Contenu</th></tr></thead><tbody><tr><td>1 à 3</td><td>journée de vente, leçons du rendez-vous, faits sur le business</td></tr><tr><td>4</td><td>calcul en euros par heure</td></tr><tr><td>5 et 6</td><td>prospection par email, droit français, Gmail</td></tr><tr><td>7 et 8</td><td>tarification à trois options, appel de vente, objections</td></tr><tr><td>9 et 10</td><td>marché du jeu vidéo, assets, bibliothèque d’ouvrages</td></tr><tr><td>12 à 16</td><td>sources primaires, 15 fiches de livres, marché, 57 questions-réponses</td></tr><tr><td>17 à 26</td><td>statut juridique, URSSAF, impôts, passage en société, Japon, résidence permanente, tableau de décision</td></tr></tbody></table>",
+      "figures": [
+        {
+          "id": "calculator",
+          "caption": "Résultat du calculateur SalesMath.mjs avec les hypothèses par défaut. Valeurs estimées."
+        }
+      ]
+    },
+    {
+      "id": "calcul",
+      "eyebrow": "05 / Calculateur",
+      "title": "Calcul en euros par heure",
+      "nav": "Calculateur",
+      "html": "<p>La commande <code>node /Users/zenray/.claude/skills/zenray-sales/scripts/SalesMath.mjs --measured</code> compare trois options. Hypothèses par défaut : 30 contacts, réponse positive 10 %, signature 33 %, contrat de 500 €.</p><table><thead><tr><th>Option</th><th>€ par heure</th></tr></thead><tbody><tr><td>Prospection directe des studios</td><td>32</td></tr><tr><td>Un asset sur le store (6 mois)</td><td>23</td></tr><tr><td>Construire un outil avant d’avoir un client</td><td>8</td></tr></tbody></table><p>Avec un contrat de 1 500 € et 16 h de livraison, la prospection passe à 64 € par heure. Le taux de signature et les ventes du store sont des estimations.</p>"
+    },
+    {
+      "id": "statut",
+      "eyebrow": "06 / Statut et Japon",
+      "title": "Statut, impôts, Japon",
+      "nav": "Statut",
+      "html": "<p>Les chapitres 17 à 26 couvrent la micro-entreprise, l’URSSAF, la TVA, l’impôt sur le revenu, l’EURL, la SASU, le portage, le visa vacances-travail, les visas de travail, la résidence fiscale France-Japon et la résidence permanente.</p><p>Le calculateur <code>TaxMath.mjs</code> donne, pour 30 000 € de chiffre d’affaires, un net final de 21 418 € en micro-entreprise, 18 598 € en EURL et 15 158 € en SASU. Ces valeurs sont des estimations pédagogiques.</p><p>Plusieurs sources officielles n’étaient pas lisibles. Certains taux sont estimés et les conditions du visa vacances-travail proviennent de sources secondaires. Chaque décision se fait valider par un expert-comptable.</p>"
+    },
+    {
+      "id": "limites",
+      "eyebrow": "07 / Limites",
+      "title": "Limites connues",
+      "nav": "Limites",
+      "html": "<ul><li>Sales1.md est plus petit que Copernicus2.md (2,6 Mo).</li><li>Beaucoup de chiffres de cold email viennent d’éditeurs d’outils d’emailing.</li><li>Aucun livre n’a été lu en entier ; les fiches reposent sur des extraits et des interviews publics.</li><li>Les sujets restants sont listés dans les chapitres 16 et 26.</li></ul>"
+    },
+    {
+      "id": "fichiers",
+      "eyebrow": "08 / Fichiers",
+      "title": "Fichiers du projet",
+      "nav": "Fichiers",
+      "html": "<ul><li><code>/Users/zenray/.claude/skills/zenray-sales/SKILL.md</code></li><li><code>/Users/zenray/.claude/skills/zenray-sales/Sales1.md</code></li><li><code>/Users/zenray/.claude/skills/zenray-sales/scripts/SalesMath.mjs</code></li><li><code>/Users/zenray/.claude/skills/zenray-sales/scripts/TaxMath.mjs</code></li><li><code>/Users/zenray/.claude/tmp/tmp-rdv-andreas-sales-23-October-2026/BRIEF.md</code></li></ul>"
+    }
+  ],
+  "fileAnchors": {
+    "calculator": "article-opening"
+  },
+  "titleStyle": "italic"
+}
