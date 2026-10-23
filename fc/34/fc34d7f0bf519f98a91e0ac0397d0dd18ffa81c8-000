@@ -1,0 +1,86 @@
+{
+  "title": "ZenRay Sales",
+  "eyebrow": "Vente et prospection",
+  "date": "24 October 2026",
+  "subtitle": "zenray-sales",
+  "status": "Version du 24 October 2026, générée depuis SKILL.md",
+  "lead": "Skill de conseil en vente, tarification, statut juridique et prospection. Cet article est généré depuis le skill à chaque consignation.",
+  "hero": "hero",
+  "heroAlt": "Barres comparant la prospection, le store d’assets et la construction d’un outil, en euros par heure.",
+  "heroText": "Chaque arbitrage de vente se ramène à un calcul en euros par heure.",
+  "heroCaption": "Calculateur SalesMath.mjs, hypothèses par défaut.",
+  "sources": "Sources.json",
+  "footer": "ZenRay Sales · 24 October 2026 · SKILL.md 188a9953c259",
+  "fileLabels": {
+    "hero": "Barres comparant la prospection, le store d’assets et la construction d’un outil, en euros par heure."
+  },
+  "fileRoles": {
+    "hero": "Image d’ouverture."
+  },
+  "skillSha256": "188a9953c259bd0ff03b84986688719e3a74de493d622ea8f52e117de5a80225",
+  "sections": [
+    {
+      "id": "s01",
+      "eyebrow": "01 / Sources, dans cet ordre",
+      "title": "Sources, dans cet ordre (23 October 2026)",
+      "nav": "Sources, dans cet ordre",
+      "html": "<div style=\"overflow-x:auto;max-width:100%\"><table><tr><th>Fichier</th><th>Contenu</th></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-sales/Sales1.md</code></td><td>LA base : index, journée de vente, leçons Andreas, faits du business, calcul €/h, prospection, droit et délivrabilité, tarification, appel de vente, marché, bibliothèque, registre</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-sales/scripts/SalesMath.mjs</code></td><td>calculateur €/h ; <code style=\"overflow-wrap:anywhere\">--measured</code> lit ZenRay Freelance</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-sales/scripts/TaxMath.mjs</code></td><td>comparateur micro, EURL à l'IS et SASU sur le net après cotisations et impôt ; <code style=\"overflow-wrap:anywhere\">--targetNet</code> résout le chiffre d'affaires ; <code style=\"overflow-wrap:anywhere\">--selftest</code> ; tous les taux en tête de fichier avec source (23 October 2026)</td></tr><tr><td>Sales1.md chapitres 17 à 26</td><td>statut, fiscalité, Japon : 17 micro et TVA, 18 impôt, 19 formes de société, 20 travail au Japon, 21 résidence fiscale et sécurité sociale, 22 résidence permanente, 23 tableau de décision, 24 questions Q58 à Q93, 25 registre de 71 pages, 26 sujets ouverts (23 October 2026)</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-hormozi/references/offers-leads.md</code></td><td>thèses Hormozi (offre, Core Four)</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-graham/references/</code></td><td>thèses Paul Graham</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/Memory1/Business/Freelance1.md</code>, <code style=\"overflow-wrap:anywhere\">Business1.md</code>, <code style=\"overflow-wrap:anywhere\">2026-09-23-plan-d-attaque/</code></td><td>historique, CRM, scoreboard</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-freelance/SKILL.md</code></td><td>ZenRay Apply, l'outil d'envoi</td></tr><tr><td><code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-calendar-plan/SKILL.md</code></td><td>poser les blocs de prospection dans l'agenda</td></tr></table></div><p>Sales1.md ne se lit jamais en entier : lire l'index (section 0), puis <code style=\"overflow-wrap:anywhere\">grep -n \"^## \\|^### \"</code> et la seule section utile. (23 October 2026)</p>"
+    },
+    {
+      "id": "s02",
+      "eyebrow": "02 / Répondre à une question",
+      "title": "Répondre à une question (23 October 2026)",
+      "nav": "Répondre à une question",
+      "html": "<ul><li>Chiffres frais : <code style=\"overflow-wrap:anywhere\">node /Users/zenray/.claude/skills/zenray-sales/scripts/SalesMath.mjs --measured</code>. (23 October 2026)</li><li>Lire la section de Sales1.md qui gouverne la question. (23 October 2026)</li><li>Répondre par un calcul ou une règle sourcée, puis un geste du jour à un destinataire réel. Distinguer mesuré et estimé dans la phrase. (23 October 2026)</li><li>Toute question « quoi faire d'abord » (développer, store, studios) passe par le calculateur, jamais par l'intuition. (23 October 2026)</li><li>Un rendez-vous se prépare avec le gabarit <code style=\"overflow-wrap:anywhere\">templates/rdv-brief.md</code> dans <code style=\"overflow-wrap:anywhere\">~/.claude/tmp/tmp-rdv-&lt;nom&gt;-&lt;jour&gt;-&lt;Month&gt;-&lt;année&gt;/BRIEF.md</code>. (23 October 2026)</li></ul>"
+    },
+    {
+      "id": "s03",
+      "eyebrow": "03 / Les règles d'or",
+      "title": "Les règles d'or (23 October 2026)",
+      "nav": "Les règles d'or",
+      "html": "<ul><li>Calendrier d'abord, to-do ensuite ; 9 h à 10 h 30 prospection avant tout développement ; au moins 10 studios par jour (Andreas, 23 October 2026). (23 October 2026)</li><li>Le volume bat la prudence : 700 emails valent mieux que 3 par jour, tant que chaque message est en rapport avec le métier du destinataire et propose un seul geste. (23 October 2026)</li><li>Vendre l'existant avant de construire du neuf ; un outil sans client est l'option la moins payée du calculateur. (23 October 2026)</li><li>Trois options, la plus chère en premier ; le panier est le levier le plus fort. (23 October 2026)</li><li>Ne jamais mélanger candidature salariée et proposition freelance dans le même email. (23 October 2026)</li><li>Stat personnelle à mesurer : environ 1 réponse positive pour 10 studios ; loi seulement après 100 envois. (23 October 2026)</li></ul>"
+    },
+    {
+      "id": "s04",
+      "eyebrow": "04 / Continuer la base",
+      "title": "Continuer la base (23 October 2026)",
+      "nav": "Continuer la base",
+      "html": "<p>La base se complète par boucles de recherche, comme Copernicus2 : un sujet, une recherche web, la source primaire quand elle existe, une ligne datée avec lien, et une ligne dans la section 11 (registre). Une information non vérifiée s'écrit comme telle. Sujets ouverts : section 11. (23 October 2026)</p>"
+    },
+    {
+      "id": "s05",
+      "eyebrow": "05 / Ancien skill",
+      "title": "Ancien skill (23 October 2026)",
+      "nav": "Ancien skill",
+      "html": "<p>La première version de ce skill (préparation du rendez-vous Andreas) est remplacée par celle-ci ; son gabarit reste <code style=\"overflow-wrap:anywhere\">templates/rdv-brief.md</code> et la fiche du rendez-vous <code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/tmp/tmp-rdv-andreas-sales-23-October-2026/BRIEF.md</code>. (23 October 2026)</p>"
+    },
+    {
+      "id": "s06",
+      "eyebrow": "06 / Cinquième boucle, 23 October 2026",
+      "title": "Cinquième boucle, 23 October 2026 (23 October 2026)",
+      "nav": "Cinquième boucle, 23 October 2026",
+      "html": "<ul><li>Sales1.md compte désormais les sections 12 à 16 : sources primaires lues en entier (Enns, rapports cold email, PDF Hormozi, Malt et AFJV, Fab et SideFX, CNIL), quinze fiches de livres, le marché jeu vidéo (CNC, salons, saisonnalité) et un catalogue de 57 questions avec réponse, section et calcul. Index complémentaire : section 16. (23 October 2026)</li><li>Pour une question courante, chercher d'abord dans le catalogue : <code style=\"overflow-wrap:anywhere\">grep -n \"^- Q\" /Users/zenray/.claude/skills/zenray-sales/Sales1.md</code>. (23 October 2026)</li><li>Piège payé : dans zsh, <code style=\"overflow-wrap:anywhere\">node SalesMath.mjs $a</code> avec <code style=\"overflow-wrap:anywhere\">a=\"--replyRate 0.05\"</code> passe UN seul argument et le paramètre est ignoré sans erreur ; écrire les options en clair ou <code style=\"overflow-wrap:anywhere\">${=a}</code>. (23 October 2026)</li><li>Point critique découvert : les fichiers de Matthieu sont en <code style=\"overflow-wrap:anywhere\">.hiplc</code> (Houdini Indie) ; livrer un HDA à un studio de plus de 100 000 $ exige une licence commerciale des deux côtés (Sales1.md, section 12.5). (23 October 2026)</li></ul>"
+    },
+    {
+      "id": "s07",
+      "eyebrow": "07 / Sixième boucle : statut, fiscalité, Japon",
+      "title": "Sixième boucle : statut, fiscalité, Japon (23 October 2026)",
+      "nav": "Sixième boucle : statut, fiscalité, Japo",
+      "html": "<ul><li>Règle de réponse (23 October 2026) : toute question de <strong>statut, de cotisations, de TVA, d'impôt, de société, de visa ou de résidence</strong> se répond depuis les chapitres 17 à 24 de Sales1.md (<code style=\"overflow-wrap:anywhere\">grep -n \"^- Q5[8-9]\\|^- Q[6-9][0-9]\" Sales1.md</code> pour le catalogue), avec un calcul de <code style=\"overflow-wrap:anywhere\">TaxMath.mjs</code> aux vrais chiffres, et <strong>se termine par le rappel de faire valider la décision par un expert-comptable ou le conseiller de l'Urssaf</strong> (pour le Japon : consulat de Marseille et centre d'information de l'agence d'immigration, 0570-013904). Ce n'est jamais un conseil personnalisé. (23 October 2026)</li><li>Commandes (23 October 2026) : <code style=\"overflow-wrap:anywhere\">node /Users/zenray/.claude/skills/zenray-sales/scripts/TaxMath.mjs --ca 30000 --expenses 3000</code> ; <code style=\"overflow-wrap:anywhere\">--targetNet 10000</code> ; <code style=\"overflow-wrap:anywhere\">--category bic</code> ; <code style=\"overflow-wrap:anywhere\">--vfl</code> ; <code style=\"overflow-wrap:anywhere\">--acre</code> ; <code style=\"overflow-wrap:anywhere\">--salaryShare 0.5</code> ; <code style=\"overflow-wrap:anywhere\">--json</code> ; <code style=\"overflow-wrap:anywhere\">--selftest</code>. Dans zsh, écrire les options en clair. (23 October 2026)</li><li>Faits à ne pas oublier (23 October 2026) : BNC 25,6 % et BIC 21,2 % de cotisations en 2026, plafond micro 83 600 €, franchise de TVA 37 500 € ; pour 10 000 € nets il faut 13 441 € de chiffre d'affaires en BNC ; la mention de franchise change au 1 September 2026 (CIBS) ; l'émission de factures électroniques devient obligatoire pour les micro-entreprises le 1 September 2027 ; l'option du versement libératoire pour 2027 est passée (30 September 2026) ; le PVT demande 4 950 € sur le compte (source secondaire) ; la résidence permanente japonaise coûte 200 000 ¥ depuis le 1 October 2026 et se demande après 10 ans, 3 ans avec 70 points, 1 an avec 80 points. (23 October 2026)</li><li>Limites (23 October 2026) : impots.gouv.fr, urssaf.fr, mofa.go.jp et les sites des ambassades du Japon n'étaient pas lisibles le 23 October 2026 ; les taux de l'assimilé salarié et du travailleur non salarié dans <code style=\"overflow-wrap:anywhere\">TaxMath.mjs</code> sont <strong>estimés</strong> ; les conditions du PVT sont secondaires. Les sujets ouverts A à G sont en section 26. (23 October 2026)</li><li>Statut de Matthieu (23 October 2026) : non confirmé (micro-entrepreneur BNC supposé) ; le demander à l'espace Urssaf avant tout conseil précis. (23 October 2026)</li><li>Outil de lecture (23 October 2026) : <code style=\"overflow-wrap:anywhere\">python3 /Users/zenray/.claude/skills/zenray-sales/scripts/GetPage.py &lt;url&gt; &lt;fichier.txt&gt;</code> télécharge une page ou un PDF en entier (curl, pdftotext) et l'écrit en texte pour le lire par sections ; il passe sur moj.go.jp, nta.go.jp, senat.fr quand WebFetch échoue ou renvoie un PDF illisible. (23 October 2026)</li></ul>"
+    },
+    {
+      "id": "s08",
+      "eyebrow": "08 / Projet Assets et article",
+      "title": "Projet Assets et article (23 October 2026)",
+      "nav": "Projet Assets et article",
+      "html": "<ul><li>Projet Assets : <code style=\"overflow-wrap:anywhere\">zenray-sales-23-october-2026</code> (sources : atelier, notes, copie du skill, dossier du rendez-vous Andreas). Reprise : <code style=\"overflow-wrap:anywhere\">node /Users/zenray/Create/Build/Productions/GithubProductions/ZenRayProgress/scripts/Assets/Client.mjs context zenray-sales-23-october-2026</code>. (23 October 2026)</li><li>Article neutre (ton neutre court, titres en GT Sectra italique) publié dans le projet, version du 23 October 2026 : <code style=\"overflow-wrap:anywhere\">/Users/zenray/.claude/skills/zenray-edit/articles/23-October-2026-zenray-sales/index.html</code>. Pour le mettre à jour : modifier <code style=\"overflow-wrap:anywhere\">Article-23-October-2026.json</code> dans l'atelier <code style=\"overflow-wrap:anywhere\">Drafts/Article</code>, rendre avec <code style=\"overflow-wrap:anywhere\">render-project-article.mjs</code>, puis relancer <code style=\"overflow-wrap:anywhere\">file-article.mjs</code> avec le nouveau SHA du fichier (une nouvelle version V_002 est créée, l'ancienne reste). Ne pas relancer la commande pour vérifier : chaque exécution ajoute une ligne à <code style=\"overflow-wrap:anywhere\">articles/INDEX.md</code> et met des archives en file. (23 October 2026)</li></ul>"
+    },
+    {
+      "id": "s09",
+      "eyebrow": "09 / 23 October 2026 : la journée se pose par zenray-calendar-plan",
+      "title": "23 October 2026 : la journée se pose par zenray-calendar-plan",
+      "nav": "23 October 2026 : la journée se pose par",
+      "html": "<ul><li>Les blocs de prospection et les rendez-vous se placent par <code style=\"overflow-wrap:anywhere\">node /Users/zenray/.claude/skills/zenray-calendar-plan/scripts/CalendarPlan.mjs fit --spec &lt;jour&gt;.json --apply</code> (blocs de 15 minutes, jamais deux choses en même temps, <code style=\"overflow-wrap:anywhere\">check</code> pour le prouver) ; <code style=\"overflow-wrap:anywhere\">zenray-plan</code> est supprimé et remplacé. (23 October 2026)</li></ul>"
+    }
+  ]
+}
